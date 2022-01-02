@@ -7,8 +7,9 @@ use App\Models\Book;
 
 class Status extends Model
 {
+    //один ко многим
     public function books()
     {
-        return $this->hasMany(Book::class); //один ко многим
+        return $this->hasMany(Book::class);
     }
 }

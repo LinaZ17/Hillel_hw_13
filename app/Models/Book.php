@@ -16,7 +16,8 @@ class Book extends Model
 
     public function status()
     {
-        return $this->belongsTo(Status::class); //один ко многим обратное отношение
+        //один ко многим обратное отношение
+        return $this->belongsTo(Status::class);
 
     }
 

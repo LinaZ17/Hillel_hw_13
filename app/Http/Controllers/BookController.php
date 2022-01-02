@@ -44,8 +44,8 @@ class BookController extends Controller
 
     }
 
-
-    public function show()  //2 таблицы users и books
+//2 таблицы users и books
+    public function show()
     {
         $users = DB::table('users')
             ->leftjoin('books', 'users.id', '=', 'books.author_id')
